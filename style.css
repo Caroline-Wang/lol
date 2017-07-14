@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.topbar-wrapper {
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+
+.topbar-wrapper > .banner {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.topbar-wrapper > .banner > .logo {
+    width: 190px;
+    height: 100px;
+    background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 -27px;
+    position: absolute;
+    z-index:1;
+}
+
+.topbar-wrapper > .topbar {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.topbar-wrapper > .topbar > ul.main-nav {
+    margin-left: 200px;
+    float: left;
+}
+
+.topbar-wrapper > .topbar > ul.main-nav > li {
+    font-size: 18px;
+    float: left;
+    text-align: center;
+    width: 120px;
+    padding: 29px 0;
+    line-height: 1.0;
+}
+
+.topbar-wrapper > .topbar > ul.main-nav > li a {
+    color: #fff;
+    font-weight: bold;
+    font-family: '黑体';
+}
+
+.topbar-wrapper > .topbar > ul.main-nav > li span {
+    font-size: 10px;
+    display: block;
+    font-weight: normal;
+    color: #999;
+    margin-top: 4px;
+}
+
+.topbar-wrapper > .topbar > .top-icon {
+    float: left;
+    padding: 26px 10px 37px 10px;
+}
+
+.topbar-wrapper > .topbar > .top-icon > .icon {
+    width: 27px;
+    height: 27px;
+    background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 0;
+    display: block;
+}
+
+.topbar-wrapper > .topbar > .top-icon > .icon-search {
+    background-position: -9px 0;
+}
+
+.topbar-wrapper > .topbar > .top-icon > .icon-mobile {
+    background-position: -42px 0;
+}
+
+.topbar-wrapper > .topbar > .user {
+    float: right;
+    position: relative;
+    z-index: 0;
+}
+
+.topbar-wrapper > .topbar > .user > .avatar {
+    float: left;
+    width: 74px;
+    height: 74px;
+    background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -4px -170px;
+    margin-top: 8px;
+}
+
+.topbar-wrapper > .topbar > .user > .avatar > img {
+    border-radius: 50%;
+    position: relative;
+    z-index: -1;
+}
+
+.topbar-wrapper > .topbar > .user > .login {
+    float: left;
+    font-family: '黑体';
+    line-height: 2;
+    padding-top: 17px;
+    padding-left: 20px;
+}
+
+.topbar-wrapper > .topbar > .user > .login > h2 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.topbar-wrapper > .topbar > .user > .login > h2 > a {
+    color: #DFB257;
+    text-decoration: underline;
+}
+
+.topbar-wrapper > .topbar > .user > .login > p {
+    font-size: 12px;
+    color: #999;
+}
+
+.topbar-wrapper > .topbar > .user > .sub-user-wrapper {
+    width: 350px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.topbar-wrapper > .topbar > .user > .avatar:hover ~ .sub-user-wrapper,
+.topbar-wrapper > .topbar > .user > .login:hover ~ .sub-user-wrapper {
+    display: block;
+}
+
+.topbar-wrapper > .topbar > .user > .sub-user-wrapper > div {
+    color: #999;
+    padding: 30px;
+}
+
+.topbar-wrapper > .topbar > .user > .sub-user-wrapper > a {
+    display: block;
+    background: #000;
+    color: inherit;
+    font-size: 12px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper {
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.topbar-wrapper > .topbar > ul.main-nav:hover ~ .sub-menu-wrapper {
+    display: block;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper > div {
+    width: 1240px;
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper > div > ul.sub-menu > li {
+    text-align: center;
+    float: left;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper > div > ul.sub-menu > li > a {
+    display: block;
+    width: 120px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper > div > ul.sub-menu > li > a:hover {
+    color: #DFB257;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper > div > ul.sub-menu > li > a > i.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat 0 0;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper > div > ul.sub-menu > li > a > i.icon-hot {
+    background-position: -105px 5px;
+}
+
+.topbar-wrapper > .topbar > .sub-menu-wrapper > div > ul.sub-menu > li > a > i.icon-new {
+    background-position: -127px 5px;
+}
+
+
+.art-and-download-wrapper{
+    width:100%;
+    padding-top:0.1px;
+    height:750px;
+    overflow: hidden;
+    transition: all 1s;
+    border-bottom: 2px solid #8C6C2D;
+}
+.art-and-download-wrapper.active{
+    height:350px;
+    transition: all 1s;
+}
+.art-and-download-wrapper>.art-and-download{
+    width:1240px;
+    margin:0 auto;
+    position: relative;
+}
+.art-and-download-wrapper>.art-and-download>video{
+    position: absolute;
+    left:50%;
+    top:0;
+    margin-left: -960px;
+    width: 1920px;
+    /*height:750px;*/
+    z-index:-1;
+    display:none;
+    transition: all 1s;
+}
+.art-and-download-wrapper>.art-and-download>video.active{
+    display: block;
+    transition: all 1s;
+}
+
+.art-and-download-wrapper .art-and-download>.introduce{
+    position: absolute;
+    top: 100px;
+    z-index:-1;
+}
+.art-and-download-wrapper .art-and-download>.introduce.active{
+    position: absolute;
+    top: 30px;
+}
+.art-and-download-wrapper .art-and-download>.introduce>h2{
+    font-size:50px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.art-and-download-wrapper .art-and-download>.introduce>p{
+    color: #ccc;
+    font-size:14px;
+    margin-bottom:70px;
+}
+.art-and-download-wrapper .art-and-download>.introduce>p.active{
+    margin-bottom:20px;
+}
+.art-and-download-wrapper .art-and-download>.introduce>.introduce-video{
+    position: relative;
+}
+.art-and-download-wrapper .art-and-download>.introduce>.introduce-video>video{
+    border: 1px solid #987630;
+    vertical-align: top;
+    width:220px;
+    height: 120px;
+}
+.art-and-download-wrapper .art-and-download>.introduce>.introduce-video>a.play-detail{
+    display: block;
+    background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -220px -31px;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:35px;
+    left:85px;
+}
+.art-and-download-wrapper .art-and-download>.introduce>.introduce-video>a.check-detail{
+    color: #DFB257;
+    display: block;
+    width:160px;
+    font-size: 14px;
+    line-height:36px;
+    border: 2px solid transparent;
+    border-image-source: linear-gradient(#6C5124, #B78C35);
+    border-image-slice: 1;
+    border-image-width: 1;
+    margin-top:30px;
+    text-align: center;
+}
+.art-and-download-wrapper .art-and-download>.introduce>.introduce-video>a.check-detail.active{
+    margin-top:12px;
+}
+
+.tabs-wrapper{
+    width: 100%;
+    margin:0 auto;
+    background:url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) repeat-x 0 -257px;
+
+}
+.tabs-wrapper>ul.tabs{
+    width:1240px;
+    margin:0 auto;
+}
+.tabs-wrapper>ul.tabs>li{
+    float: left;
+    width:110px;
+    font-size: 20px;
+    line-height:60px;
+    text-align: center;
+    cursor: pointer;
+    margin-right:50px;
+}
+.tabs-wrapper>ul.tabs>li.active{
+    color: #D1AB57;
+    border-bottom:2px solid #D1AB57;
+}
+
+.main-content{
+    width:100%;
+    background: #f7f7f7  url(http://ossweb-img.qq.com/images/lol/v2/bg-content-top.jpg) no-repeat center top;
+    padding-top:40px;
+}
+.main-content>.home-slides{
+    width:1240px;
+    margin:0 auto;
+}
+#slides{
+    width:820px;
+    float: left;
+    /*height:350px;*/
+}
+#slides ul.slidesjs-pagination li{
+    float: left;
+    width:164px;
+    text-align: center;
+    background: #121112;
+    font-size:14px;
+    color: #c8c8c8;
+    line-height:50px;
+}
+#slides ul.slidesjs-pagination>li>a.active{
+    color:#E9C06C;
+}
+.main-content>.home-slides>.home-nav{
+    width:400px;
+    float: right;
+}
+.main-content>.home-slides>.home-nav>ul.side-menu>li{
+    float: left;
+    width:130px;
+    font-size: 14px;
+    line-height: 55px;
+    background: #fff;
+    color: #555;
+    text-align: center;
+    margin-left:5px;
+    margin-top:5px;
+}
+.main-content>.home-slides>.home-nav>ul.side-menu>li:nth-child(3n+1){
+    margin-left:0;
+}
