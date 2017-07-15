@@ -103,23 +103,22 @@ a {
 .topbar-wrapper > .topbar > .user > .avatar {
     float: left;
     width: 74px;
-    height: 74px;
-    background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -4px -170px;
-    margin-top: 8px;
+    height: 90px;
+    background: transparent url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -3px -161px;
 }
 
 .topbar-wrapper > .topbar > .user > .avatar > img {
     border-radius: 50%;
     position: relative;
     z-index: -1;
+    margin-top:10px;
 }
 
 .topbar-wrapper > .topbar > .user > .login {
     float: left;
     font-family: '黑体';
     line-height: 2;
-    padding-top: 17px;
-    padding-left: 20px;
+    padding: 17px 0 17px 20px;
 }
 
 .topbar-wrapper > .topbar > .user > .login > h2 {
@@ -146,7 +145,9 @@ a {
     left: 0;
     display: none;
 }
-
+.topbar-wrapper > .topbar > .user > .sub-user-wrapper:hover{
+    display: block;
+}
 .topbar-wrapper > .topbar > .user > .avatar:hover ~ .sub-user-wrapper,
 .topbar-wrapper > .topbar > .user > .login:hover ~ .sub-user-wrapper {
     display: block;
@@ -175,7 +176,9 @@ a {
     left: 0;
     top: 100%;
 }
-
+.topbar-wrapper > .topbar > ul.main-nav~ .sub-menu-wrapper:hover {
+    display: block;
+}
 .topbar-wrapper > .topbar > ul.main-nav:hover ~ .sub-menu-wrapper {
     display: block;
 }
@@ -354,6 +357,9 @@ a {
 }
 #slides ul.slidesjs-pagination li{
     float: left;
+}
+#slides ul.slidesjs-pagination>li>a{
+    display: block;
     width:164px;
     text-align: center;
     background: #121112;
@@ -363,6 +369,7 @@ a {
 }
 #slides ul.slidesjs-pagination>li>a.active{
     color:#E9C06C;
+    background: #303030;
 }
 .main-content>.home-slides>.home-nav{
     width:400px;
@@ -378,6 +385,9 @@ a {
     text-align: center;
     margin-left:5px;
     margin-top:5px;
+}
+.main-content>.home-slides>.home-nav>ul.side-menu>li:hover{
+    background: rgb(111,111,111);
 }
 .main-content>.home-slides>.home-nav>ul.side-menu>li:nth-child(3n+1){
     margin-left:0;
